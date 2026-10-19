@@ -115,39 +115,53 @@ Consumer (54% выручки) — маржа 11.55%. Home Office (19% выруч
 ### Локально
 
 
-# 1. Клонировать репозиторий
+## 1. Клонировать репозиторий
 git clone https://github.com/<username>/superstore-analysis.git
+
 cd superstore-analysis
 
-# 2. Создать виртуальное окружение
+## 2. Создать виртуальное окружение
 python -m venv .venv
-source .venv/bin/activate    # Linux / macOS
-# .venv\Scripts\activate     # Windows
 
-# 3. Установить зависимости
+source .venv/bin/activate    # Linux / macOS
+
+.venv\Scripts\activate     # Windows
+
+## 3. Установить зависимости
 pip install -r requirements.txt
 
-# 4. Положить датасет в корень проекта
-#    Файл: 'Sample - Superstore.csv'
-#    Скачать: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+## 4. Положить датасет в корень проекта
+   Файл: 'Sample - Superstore.csv'
+   Скачать: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
-# 5. Запустить Jupyter
+## 5. Запустить Jupyter
 jupyter notebook superstore_analysis.ipynb
+
 Затем Kernel → Restart & Run All.
 
 Зависимости
+
 text
+
 pandas
+
 matplotlib
+
 seaborn
+
 jupyter
+
 Данные
+
 Файл Sample - Superstore.csv в репозиторий не входит (см. .gitignore).
+
 Скачать можно по ссылке на Kaggle выше. Ожидаемое имя файла — точно
+
 Sample - Superstore.csv, иначе поправь путь в первой ячейке ноутбука.
 
 Структура репозитория
-text
+
+```
 superstore-analysis/
 ├── superstore_analysis.ipynb   # основной ноутбук
 ├── README.md                   # этот файл
@@ -155,6 +169,7 @@ superstore-analysis/
 ├── .gitignore
 ├── Sample - Superstore.csv     # датасет (не в репозитории)
 └── superstore.db               # SQLite (создаётся при запуске, не в репозитории)
+```
 Технические детали
 Превью CSV (nrows=3) в первой секции — намеренная разведка,
 чтобы показать читателю «сырые» названия колонок до переименования
