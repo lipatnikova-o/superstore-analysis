@@ -195,7 +195,7 @@ SQLite используется для всех агрегатов (GROUP BY, ST
 
 ### Как запустить
 
-```bash
+
 # Установить зависимости (если ещё не)
 pip install -r requirements.txt
 pip install dash
