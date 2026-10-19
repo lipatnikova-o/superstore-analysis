@@ -1,0 +1,28 @@
+# Игнорируем служебные файлы Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Игнорируем служебные файлы Jupyter
+.ipynb_checkpoints/
+
+# Игнорируем виртуальные окружения
+.venv/
+venv/
+env/
+
+# Игнорируем базу данных SQLite (создаётся при запуске ноутбука)
+superstore.db
+*.db
+
+# Игнорируем датасет (скачивается с Kaggle по ссылке из README)
+Sample - Superstore.csv
+
+# Игнорируем служебные файлы операционных систем
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Игнорируем IDE
+.vscode/
+.idea/
