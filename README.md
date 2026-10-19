@@ -114,7 +114,7 @@ Consumer (54% выручки) — маржа 11.55%. Home Office (19% выруч
 
 ### Локально
 
-```bash
+
 # 1. Клонировать репозиторий
 git clone https://github.com/<username>/superstore-analysis.git
 cd superstore-analysis
